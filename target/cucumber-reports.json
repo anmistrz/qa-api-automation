@@ -1,0 +1,71 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-11-29T04:46:33.402Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1149195800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "As a user I can add new products to the store",
+        "description": "",
+        "id": "end-to-end-simulation-test;as-a-user-i-can-add-new-products-to-the-store",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3269726100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "A list of products",
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.a_list_of_products()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2645628500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I add a new product to the store",
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.i_add_a_new_product_to_the_store()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 848576400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see the product added to the store",
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.i_should_see_the_product_added_to_the_store()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "End to End Simulation Test",
+    "description": "Description: This feature file is to test the end to end simulation of the API",
+    "id": "end-to-end-simulation-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/E2E_Test.feature",
+    "tags": []
+  }
+]
