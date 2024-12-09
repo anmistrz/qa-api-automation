@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="8.304">
-    <testcase classname="End to End Simulation Test" name="As a user I can add new products to the store" time="8.013">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="38.327">
+    <testcase classname="End to End Simulation Test" name="As a user I can add new products to the store" time="20.543">
         <system-out><![CDATA[Given A list of products....................................................passed
-When I add a new product to the store.......................................passed
+When I add a new product to the store "addItem".............................passed
 Then I should see the product added to the store............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="End to End Simulation Test" name="As a user I can add new products to the store 2" time="3.525">
+        <system-out><![CDATA[Given A list of products....................................................passed
+When I add a new product to the store "addItem2"............................passed
+Then I should see the product added to the store............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="End to End Simulation Test" name="As a user I can update the product details" time="4.211">
+        <system-out><![CDATA[Given A list of products....................................................passed
+When I add a new product to the store "addItem".............................passed
+And I should see the product added to the store.............................passed
+Then I can update the product details "updateItem"..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="End to End Simulation Test" name="As a user I can update the product details 2" time="4.097">
+        <system-out><![CDATA[Given A list of products....................................................passed
+When I add a new product to the store "addItem2"............................passed
+And I should see the product added to the store.............................passed
+Then I can update the product details "updateItem2".........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="End to End Simulation Test" name="A a user I can delete the product" time="4.426">
+        <system-out><![CDATA[Given A list of products....................................................passed
+When I add a new product to the store "addItem".............................passed
+And I should see the product added to the store.............................passed
+Then I can delete the product...............................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-11-29T04:46:33.402Z",
+        "start_timestamp": "2024-12-04T08:46:07.786Z",
         "before": [
           {
             "result": {
-              "duration": 1149195800,
+              "duration": 2616998400,
               "status": "passed"
             },
             "match": {
@@ -15,16 +15,16 @@
             }
           }
         ],
-        "line": 4,
+        "line": 12,
         "name": "As a user I can add new products to the store",
         "description": "",
-        "id": "end-to-end-simulation-test;as-a-user-i-can-add-new-products-to-the-store",
+        "id": "end-to-end-simulation-test;as-a-user-i-can-add-new-products-to-the-store;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3269726100,
+              "duration": 8181996900,
               "status": "passed"
             },
             "line": 6,
@@ -36,25 +36,335 @@
           },
           {
             "result": {
-              "duration": 2645628500,
+              "duration": 8267998400,
               "status": "passed"
             },
             "line": 7,
-            "name": "I add a new product to the store",
+            "name": "I add a new product to the store \"addItem\"",
             "match": {
-              "location": "stepDefinitions.StepDefinitions.i_add_a_new_product_to_the_store()"
+              "arguments": [
+                {
+                  "val": "\"addItem\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitions.i_add_a_new_product_to_the_store(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 848576400,
+              "duration": 1071002200,
               "status": "passed"
             },
             "line": 8,
             "name": "I should see the product added to the store",
             "match": {
               "location": "stepDefinitions.StepDefinitions.i_should_see_the_product_added_to_the_store()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-04T08:46:28.351Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "As a user I can add new products to the store",
+        "description": "",
+        "id": "end-to-end-simulation-test;as-a-user-i-can-add-new-products-to-the-store;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1433000800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "A list of products",
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.a_list_of_products()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1091002100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I add a new product to the store \"addItem2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addItem2\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitions.i_add_a_new_product_to_the_store(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 991003300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see the product added to the store",
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.i_should_see_the_product_added_to_the_store()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-04T08:46:31.881Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "As a user I can update the product details",
+        "description": "",
+        "id": "end-to-end-simulation-test;as-a-user-i-can-update-the-product-details;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1259998100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "A list of products",
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.a_list_of_products()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1113000600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I add a new product to the store \"addItem\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addItem\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitions.i_add_a_new_product_to_the_store(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1030013200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I should see the product added to the store",
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.i_should_see_the_product_added_to_the_store()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 790000100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I can update the product details \"updateItem\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updateItem\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitions.i_can_update_the_product_details(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-04T08:46:36.098Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1008500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "As a user I can update the product details",
+        "description": "",
+        "id": "end-to-end-simulation-test;as-a-user-i-can-update-the-product-details;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1250557800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "A list of products",
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.a_list_of_products()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1051999700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I add a new product to the store \"addItem2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addItem2\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitions.i_add_a_new_product_to_the_store(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 965307800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I should see the product added to the store",
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.i_should_see_the_product_added_to_the_store()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 820670400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I can update the product details \"updateItem2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updateItem2\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitions.i_can_update_the_product_details(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-12-04T08:46:40.202Z",
+        "before": [
+          {
+            "result": {
+              "duration": 998600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "A a user I can delete the product",
+        "description": "",
+        "id": "end-to-end-simulation-test;a-a-user-i-can-delete-the-product;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1185003800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "A list of products",
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.a_list_of_products()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1434001400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I add a new product to the store \"addItem\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addItem\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitions.i_add_a_new_product_to_the_store(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 958001100,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I should see the product added to the store",
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.i_should_see_the_product_added_to_the_store()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 832996900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I can delete the product",
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.i_can_delete_the_product()"
             },
             "keyword": "Then "
           }

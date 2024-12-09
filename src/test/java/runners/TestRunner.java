@@ -15,7 +15,8 @@ import io.cucumber.junit.CucumberOptions;
             "json:target/cucumber-reports.json",
             "junit:target/cucumber-reports.xml"
         },
-        monochrome = true
+        monochrome = true,
+        strict = true
 )
 public class TestRunner {
 
